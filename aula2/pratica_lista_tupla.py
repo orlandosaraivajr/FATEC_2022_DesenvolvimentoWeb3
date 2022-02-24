@@ -34,3 +34,26 @@ estado_SP = []
 for registro in registros: 
     if registro[1].endswith('SP'): 
         estado_SP.append(registro) 
+
+# Desafio 3: Remover itens duplicados de uma lista
+
+lista_mercado = ['Arroz', 'Feijão', 'Macarrão', 'Coca-cola']
+lista_mercado += ['Arroz', 'Coca-cola', 'arroz', 'coca-cola']
+lista_mercado += ['Arroz', 'Feijão', 'Macarrão', 'Coca-cola']
+lista_mercado += ['Arroz', 'Coca-cola', 'arroz', 'coca-cola']
+
+lista_mercado = list(set(lista_mercado))
+
+numeros = set(range(1,10)) 
+# {1, 2, 3, 4, 5, 6, 7, 8, 9}
+numeros2 = set(range(5,15))
+# {5, 6, 7, 8, 9, 10, 11, 12, 13, 14}
+numeros2.intersection(numeros) 
+# {5, 6, 7, 8, 9}
+numeros.union(numeros2)
+# {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}
+numeros.difference(numeros2) 
+# {1, 2, 3, 4}
+numeros.symmetric_difference(numeros2)  
+# {1, 2, 3, 4, 10, 11, 12, 13, 14}
+
