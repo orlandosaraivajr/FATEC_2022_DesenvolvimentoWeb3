@@ -57,3 +57,23 @@ numeros.difference(numeros2)
 numeros.symmetric_difference(numeros2)  
 # {1, 2, 3, 4, 10, 11, 12, 13, 14}
 
+# Dicionário
+a = dict(one=1, two=2, three=3)
+b = {'one': 1, 'two': 2, 'three': 3}
+ = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
+d = dict([('two', 2), ('one', 1), ('three', 3)])
+e = dict({'three': 3, 'one': 1, 'two': 2})
+f = dict({'one': 1, 'three': 3}, two=2)
+print(a == b == c == d == e == f)
+# True
+
+lista_telefonica = {} 
+lista_telefonica['Orlando'] = ('Orlando','99999-8888')  
+lista_telefonica['Fatec'] = ['Faculdade',15,'99999-8888')
+
+lista_telefonica.get('orlando', 'Não Encontrado')
+# Não Encontrado
+lista_telefonica.get('Orlando', 'Não Encontrado')
+# ('Orlando', '99999-8888')
+
+
