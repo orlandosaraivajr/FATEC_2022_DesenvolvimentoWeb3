@@ -1,7 +1,7 @@
 # Coding DOJO
 
 
-## Coding Dojo realizado em 
+## Coding Dojo realizado em 09 de março de 2022
 
 	Problema escolhido: FizzBuzz
 
