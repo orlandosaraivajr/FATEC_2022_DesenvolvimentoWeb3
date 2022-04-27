@@ -16,6 +16,6 @@ def natal(request):
 
 def tiradentes(request):
     contexto = {
-        'tiradentes': True,
+        'tiradentes': False,
     }
     return render(request, 'tiradentes.html', contexto)
