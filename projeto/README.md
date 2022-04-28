@@ -26,6 +26,9 @@ Também criamos o projeto "É Feriado" e o app "core", onde criamos uma página 
 
 Crie uma rota /tiradentes. Esta rota irá informar se hoje é feriado de Tiradentes ( 21/04) ou não.
 
+### 2022-ABR-27
 
+Aprendemos e revisitamos como funciona o ORM do Django. 
 
+Atividade: Criar uma rota única e buscar no banco de dados
 
