@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Orlando Saraiva do Nascimento Júnior">
+  
+  <title>Cadastro de Feriados</title>
+</head>
+<body>
+
+<br><br>
+    <form action={% url 'novo_feriado' %} novalidate method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h3>Novo Feriado</h3>
+        Nome do Feriado: {{ formulario.nome }}
+        <br><br>
+        Dia: {{ formulario.dia }}
+        <br><br>
+        Mês: {{ formulario.mes }}
+        <br><br>
+        Ano: {{ formulario.ano }}
+        <br><br>
+        <center>
+            <input type="submit" value="Cadastrar"/>              
+        </center>
+    </form>
+    {% if form_eleitor.errors %}
+        {% for field in form_eleitor %}
+            {% for error in field.errors %}
+                <strong>{{ error|escape }}</strong><br>
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+    
+</body>
+
+</html>
