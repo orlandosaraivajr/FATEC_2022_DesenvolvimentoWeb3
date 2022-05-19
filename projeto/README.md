@@ -32,3 +32,10 @@ Aprendemos e revisitamos como funciona o ORM do Django.
 
 Atividade: Criar uma rota única e buscar no banco de dados
 
+
+### 2022-MAI-18
+
+Aprendemos como funciona o formulário ( Forms e ModelForms)
+Visita a um projeto-teste
+
+Atividade em conjunto: Criamos um cadastro de feriados, sanitizando os dados.
